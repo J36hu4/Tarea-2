@@ -113,3 +113,12 @@ main {
         height: calc(100vh - 130px);
     }
 }
+@media (max-width: 554px) {
+    aside {
+        gap: 15px;
+    }
+
+    aside div a {
+        font-size: 15px;
+    }
+}

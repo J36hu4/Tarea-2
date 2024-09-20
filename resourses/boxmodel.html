@@ -13,8 +13,57 @@
     </header>
     <div id="bottom"></div>
     <main>
-        <div></div>
-        <p>hsdaasa</p>
+        <div class="explain">
+            <h2>Componentes del Box Model o Modelo de Caja</h2><br>
+            <p><span>1. Contenido (Content):</span> Es el área donde se muestra el contenido, como texto o imágenes.<br>
+            <span>2. Relleno (Padding):</span> Es el espacio entre el contenido y el borde. El relleno es transparente.<br>
+            <span>3. Borde (Border):</span> Es el borde que rodea el contenido y el relleno. Puede tener diferentes estilos, grosores y colores.<br>
+            <span>4. Margen (Margin):</span> Es el espacio exterior al borde. El margen también es transparente y se utiliza para separar los elementos entre sí.</p>
+            <br><img src="css/img/box_model.png" alt="Box Model">
+        </div>
+        <div class="example">
+            <h3>Ejemplo de Box Model</h3>
+            <img src="css/img/ex1_1.png" alt="">
+            <section>
+                <div id="ex1_1"><p>Ancho Total: 150px</p><p>Alto Total: 150px</p></div>
+            </section>
+            <p>En la ilustracion anterior puede ver un contedor con un ancho(width) de 150px y con un alto(height) 150px.</p><br>
+            <img src="css/img/ex1_2.png" alt="">
+            <section>
+                <div id="ex1_2"><p>Ancho Total: 150px</p><p>Alto Total: 150px</p></div>
+            </section>
+            <p>En la ilustracion anterior puede ver un contedor con un ancho(width) de 150px y con un alto(height) 150px. 
+                Ademas, tiene un margen de 15px por cada lado, un borde de 10px y un Padding de 10px.<br>
+                Si sumamos cada lado podremos ver que tiene un ancho de 220px, veamos porque:<br><br>
+                Content: 150px<br>
+                Paddin izquido: 10px<br> 
+                Paddin derecho: 10px<br>
+                Border izquierdo: 10px<br> 
+                Border derecho: 10px<br> 
+                Margin izquido: 15px<br>
+                Margin derecho: 15px<br>
+                Total: 150px + 10px + 10px + 10px + 10px + 15px + 15px <span>= 220px</span><br>
+                Así mismo pasa con la altura
+            </p>
+        </div>
+        <div class="explain">
+            <h2>Elementos en Bloque</h2><br>
+            <p>Los elementos de bloque ocupan todo el ancho disponible de su contenedor y siempre comienzan en una nueva línea. Algunos ejemplos comunes incluyen:<br>
+                - div<br>
+                - p<br>
+                - h1 a h6<br>
+                - ul, ol, li<br>
+                - table, tr, td</p>
+            <br>
+            <h2>Elementos en Linea</h2><br>
+            <p>Los elementos en línea solo ocupan el ancho necesario para su contenido y no comienzan en una nueva línea. Algunos ejemplos comunes incluyen:<br>
+                - a<br>
+                - span<br>
+                - img<br>
+                - strong<br>
+                - em</p>
+            <br>
+        </div>
     </main>
 </body>
 

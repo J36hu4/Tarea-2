@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#top {
+    height: calc(50vh - 40px);
+}
+header {
+    height: 80px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(55, 0, 255);
+    margin: auto;
+    position: sticky;
+    border-radius: 30px;
+    top: -22px;
+}
+#bottom {
+    height: calc(50vh - 40px);
+}

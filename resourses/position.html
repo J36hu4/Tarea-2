@@ -2,9 +2,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/position.css">
 </head>
-<body>
+<body></body>
+    <div id="top"></div>
+    <header>
+        <h1>Posicionamiento</h1>
+    </header>
+    <div id="bottom"></div>
+    <main>
+        <div id="fixed"><p> Esto es un Fixed </p></div>
+        <div class="explain">
+            <h2>Propiedad Position</h2><br>
+            <p>La propiedad position en CSS se utiliza para especificar el método de posicionamiento de un elemento.
+            Los valores principales son static, relative, absolute, fixed y sticky.</p>
+            <p><span>1. Static:</span> Es el valor por defecto. Los elementos se posicionan según el flujo normal del documento.</p>
+            <p><span>2. Relative:</span> El elemento se posiciona relativo a su posición normal. Puedes usar top, right, bottom, y left para ajustar su posición.</p>
+            <p><span>3. Absolute:</span> El elemento se posiciona relativo a su contenedor más cercano que no tenga position: static. Si no hay tal contenedor, se posiciona relativo al html.</p>
+            <p><span>4. Fixed:</span> El elemento se posiciona relativo a la ventana del navegador y no se mueve al hacer scroll.</p>
+            <p><span>5. Sticky:</span> Es una combinación de los valores relative y fixed. Un elemento con position: sticky se comporta como un elemento relative hasta que alcanza un umbral definido por las propiedades top, right, bottom, o left. Una vez que alcanza ese umbral, se comporta como un elemento fixed.</p>
+            
+            <br><h2>Propiedad Float y Clear</h2><br>
+            <p>La propiedad float se utiliza para hacer que un elemento flote a la izquierda o derecha de su contenedor, permitiendo que el texto y otros elementos fluyan a su alrededor. La propiedad clear se utiliza para controlar el comportamiento de los elementos flotantes</p>
+            <p><span>1. Float:</span> Permite que los elementos floten a la izquierda o derecha.</p>
+            <p><span>2. Clear:</span> Evita que los elementos floten a los lados especificados.</p>
+            
+            <br><h2>Propiedad Display</h2><br>
+            <p>La propiedad display controla cómo se muestra un elemento en la página.</p>
+            <p><span>1. Block:</span> El elemento se comporta como un bloque.</p>
+            <p><span>2. Inline:</span> El elemento se comporta como un elemento en línea.</p>
+            <p><span>3. Inline-Block:</span> El elemento se comporta como un bloque en línea.</p>
+            <p><span>4. None:</span> El elemento no se muestra.</p>
+                
+            <br><h2>Propiedad Overflow</h2><br>
+            <p>La propiedad overflow controla qué sucede cuando el contenido de un elemento es más grande que su área.</p>
+            <p><span>1. Visible:</span> El contenido desbordado es visible.</p>
+            <p><span>2. Hidden:</span> El contenido desbordado es oculto.</p>
+            <p><span>3. Scroll:</span> Se añaden barras de desplazamiento para ver el contenido desbordado.</p>
+            <p><span>4. Auto:</span> Se añaden barras de desplazamiento solo si es necesario.</p>
+            
+            <br><h2>Propiedad Visibility</h2><br>
+            <p>La propiedad visibility controla la visibilidad de un elemento.</p>
+            <p><span>1. Visible:</span> El elemento es visible.</p>
+            <p><span>2. Hidden:</span> El elemento es invisible pero ocupa espacio.</p>
+            <p><span>3. Collapse:</span> Similar a hidden, pero para elementos de tabla</p>
+
+            <br><h2>Propiedad Z-index</h2><br>
+            <p>La propiedad z-index controla el apilamiento de elementos posicionados. La jerarquia de quien esta sobre quien se decide segun el numero que se le asigne</p>
+        </div>
+    </main>
     
 </body>
 </html>
