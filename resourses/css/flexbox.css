@@ -29,6 +29,13 @@ header {
     flex-direction: column;
     text-align: justify;
 }
-p span {
+span {
     font-weight: bold;
+}
+
+ol {
+    margin-left: 20px;
+}
+ul {
+    margin-left: 20px;
 }

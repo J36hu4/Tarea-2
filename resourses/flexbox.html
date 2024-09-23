@@ -4,15 +4,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/flexbox.css">
 </head>
-<body></body>
+<body>
     <div id="top"></div>
     <header>
         <h1>Flexbox</h1>
     </header>
     <div id="bottom"></div>
     <main>
-        
+        <div class="explain">
+            <h2>Flex Container</h2><br>
+            <ol>
+                <li>
+                    <p><span>flex-direction: </span>Define la dirección en la que los elementos flexibles se colocan en el contenedor</p>
+                    <ul>
+                        <li><span>row: </span>Los elementos se colocan en una fila horizontal (de izquierda a derecha).</li>
+                        <li><span>row-reverse: </span>Los elementos se colocan en una fila horizontal pero en orden inverso (de derecha a izquierda).</li>
+                        <li><span>column: </span>Los elementos se colocan en una columna vertical (de arriba hacia abajo).</li>
+                        <li><span>column-reverse: </span>Los elementos se colocan en una columna vertical pero en orden inverso (de abajo hacia arriba).</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>flex-wrap: </span>Permite que los elementos flexibles se envuelvan en múltiples líneas.</p>
+                    <ul>
+                        <li><span>nowrap: </span>Todos los elementos se colocan en una sola línea (valor por defecto)</li>
+                        <li><span>wrap: </span>Los elementos se envuelven en múltiples líneas si es necesario.</li>
+                        <li><span>wrap-reverse: </span>Los elementos se envuelven en múltiples líneas pero en orden inverso.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>flex-flow: </span>Es una abreviatura para flex-direction y flex-wrap</p>
+                    <ul>
+                        <li><span>Ejemplo: </span>flex-flow: row wrap; (equivalente a flex-direction: row; flex-wrap: wrap;).</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>: </span></p>
+                    <ul>
+                        <li><span>flex-start: </span>Los elementos se alinean al inicio del contenedor.</li>
+                        <li><span>flex-end: </span>Los elementos se alinean al final del contenedor.</li>
+                        <li><span>center: </span>Los elementos se alinean en el centro del contenedor.</li>
+                        <li><span>space-between: </span>Los elementos se distribuyen uniformemente con el primer elemento al inicio y el último al final.</li>
+                        <li><span>space-around: </span>Los elementos se distribuyen uniformemente con espacio igual alrededor de cada elemento.</li>
+                        <li><span>space-evenly: </span>Los elementos se distribuyen uniformemente con espacio igual entre ellos.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>align-items: </span>Alinea los elementos flexibles a lo largo del eje transversal.</p>
+                    <ul>
+                        <li><span>flex-start: </span>Los elementos se alinean al inicio del eje transversal.</li>
+                        <li><span>flex-end: </span>Los elementos se alinean al final del eje transversal.</li>
+                        <li><span>center: </span>Los elementos se alinean en el centro del eje transversal.</li>
+                        <li><span>baseline: </span>Los elementos se alinean según la línea base de su contenido.</li>
+                        <li><span>stretch: </span>Los elementos se estiran para llenar el contenedor (valor por defecto).</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>align-content: </span>Alinea las líneas del contenedor flex cuando hay espacio extra en el eje transversal.</p>
+                    <ul>
+                        <li><span>flex-start: </span>Las líneas se alinean al inicio del contenedor.</li>
+                        <li><span>flex-end: </span>Las líneas se alinean al final del contenedor.</li>
+                        <li><span>center: </span>Las líneas se alinean en el centro del contenedor.</li>
+                        <li><span>space-between: </span>Las líneas se distribuyen uniformemente con el primer línea al inicio y la última al final.</li>
+                        <li><span>space-around: </span>Las líneas se distribuyen uniformemente con espacio igual alrededor de cada línea.</li>
+                        <li><span>stretch: </span>Las líneas se estiran para llenar el contenedor (valor por defecto).</li>
+                    </ul>
+                </li>
+            </ol><br>
+            <h2>Flex Items</h2><br>
+            <ol>
+                <li>
+                    <p><span>order: </span>Controla el orden de los elementos flexibles.</p>
+                    <ul>
+                        <li><span>Valor: </span>Número entero (por defecto es 0). Un número menor se coloca antes y un número mayor se coloca después.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>flex-grow: </span>Define la capacidad de un elemento para crecer si es necesario.</p>
+                    <ul>
+                        <li><span>Valor: </span>Número (por defecto es 0). Un valor mayor permite que el elemento crezca más en comparación con otros elementos.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>flex-shrink: </span>Define la capacidad de un elemento para encogerse si es necesario.</p>
+                    <ul>
+                        <li><span>Valor: </span>Número (por defecto es 1). Un valor mayor permite que el elemento se encoja más en comparación con otros elementos.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>flex-basis: </span>Define el tamaño base de un elemento antes de que se distribuya el espacio restante.</p>
+                    <ul>
+                        <li><span>Valor: </span>Tamaño (por defecto es auto). Puede ser un valor absoluto (px, em, etc.) o relativo (%).</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>flex: </span>Es una abreviatura para flex-grow, flex-shrink y flex-basis.</p>
+                    <ul>
+                        <li><span>Ejemplo: </span>flex: 1 1 auto; (equivalente a flex-grow: 1; flex-shrink: 1; flex-basis: auto;).</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>align-self: </span>Permite alinear un elemento individualmente a lo largo del eje transversal.</p>
+                    <ul>
+                        <li><span>Valores: </span>auto (valor por defecto, hereda de align-items), flex-start, flex-end, center, baseline, stretch.</li>
+                    </ul>
+                </li>
+            </ol><br>
+            <h2>Flex Responsive</h2><br>
+            <ol>
+                <li>
+                    Para lograr un diseño responsivo con Flexbox, utilizamos media queries junto con las propiedades de Flexbox.
+                    <ul><li><Span>Ejemplo: </Span></li><pre>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .item {
+        flex: 1 1 200px;
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            flex-direction: column;
+        }
+    }
+                    </pre></ul>
+                </li>
+            </ol> 
+        </div>
     </main>
-    
 </body>
 </html>

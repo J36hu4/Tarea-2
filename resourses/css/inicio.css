@@ -12,11 +12,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(55, 0, 255);
     margin: auto;
     position: sticky;
     border-radius: 30px;
     top: -22px;
+    text-align: center;
+    font-size: 35px;
 }
 #bottom {
     height: calc(50vh - 40px);
